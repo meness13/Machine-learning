@@ -1,0 +1,56 @@
+# Importamos la librería statistics para calcular la desviación estándar
+import statistics
+
+# Definición de la clase
+class ProgramaCalculadoraDeListas:
+    # Constructor de la clase que recibe una lista de números
+    def __init__(self):
+        self.lista = []  # Atributo que almacenará la lista de números
+
+    # Método para agregar números a la lista
+    def agregar_numero(self, numero):
+        self.lista.append(numero)
+        print(f"✅ Número {numero} agregado a la lista.")
+
+    # Método para calcular la suma de los números
+    def calcular_suma(self):
+        suma = sum(self.lista)
+        print(f"🔢 La suma total de los números en tu lista es: {suma}")
+
+    # Método para calcular el promedio de los números
+    def calcular_promedio(self):
+        promedio = sum(self.lista) / len(self.lista)
+        print(f"📊 El promedio de los números en tu lista es: {promedio:.2f}")
+
+    # Método para encontrar el número máximo
+    def calcular_maximo(self):
+        maximo = max(self.lista)
+        print(f"🚀 El número más grande de tu lista es: {maximo}")
+
+    # Método para encontrar el número mínimo
+    def calcular_minimo(self):
+        minimo = min(self.lista)
+        print(f"🔽 El número más pequeño de tu lista es: {minimo}")
+
+    # Método para calcular la desviación estándar
+    def calcular_desviacion_estandar(self):
+        if len(self.lista) > 1:
+            desviacion = statistics.stdev(self.lista)
+            print(f"📏 La desviación estándar de tu lista es: {desviacion:.2f}")
+        else:
+            print("⚠️ Necesitas al menos dos números para calcular la desviación estándar.")
+
+    # Método para mostrar todas las estadísticas descriptivas
+    def mostrar_estadisticas(self):
+        if self.lista:
+            print("📋 Aquí están las estadísticas descriptivas de tu lista:")
+            self.calcular_suma()
+            self.calcular_promedio()
+            self.calcular_maximo()
+            self.calcular_minimo()
+            self.calcular_desviacion_estandar()
+        else:
+            print("❌ La lista está vacía. Agrega algunos números primero.")
+
+# Programa principal con un bucle para mantenerlo activo
+calculadora = ProgramaCalculadoraDeListas()
