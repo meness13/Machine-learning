@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nexo, recursos que convierten el estudio en progreso." />
+  <title>Nexo — Aprende a tu manera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="announcement">✦ Semana del estudiante: hasta 30% OFF en cursos seleccionados <a href="#explorar">Ver ofertas →</a></div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Nexo inicio"><span class="brand-mark">N</span><span>nexo</span></a>
+    <nav class="nav" id="nav">
+      <a href="#explorar">Explorar</a><a href="#categorias">Categorías</a><a href="#como-funciona">Cómo funciona</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Buscar">⌕</button>
+      <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">Bolsa <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>●</span> APRENDE. PRACTICA. AVANZA.</div>
+        <h1>Todo lo que necesitas para <em>llegar más lejos.</em></h1>
+        <p>Clases, apuntes y herramientas creadas por expertos para que aprendas mejor, a tu ritmo.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#explorar">Explorar recursos <span>↗</span></a><a class="text-btn" href="#como-funciona"><span>▶</span> Descubre cómo funciona</a></div>
+        <div class="social-proof"><div class="avatars"><span>LP</span><span>MC</span><span>AN</span></div><p><b>+12.000 estudiantes</b><br><span class="stars">★★★★★</span> 4.9 de valoración</p></div>
+      </div>
+      <div class="hero-visual" aria-label="Estudiante usando recursos de Nexo">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="study-card">
+          <div class="study-top"><span class="mini-brand">N</span><span class="tag">EN CURSO</span></div>
+          <div class="course-preview"><div class="formula">∫ <i>f</i>(x)dx</div><button aria-label="Reproducir">▶</button></div>
+          <p>MATEMÁTICA • NIVEL AVANZADO</p><h3>Cálculo sin complicaciones</h3>
+          <div class="progress"><span></span></div><small>Lección 8 de 12 <b>68%</b></small>
+        </div>
+        <div class="floating-card note"><span>✓</span><div><b>Meta semanal</b><small>¡Completada!</small></div></div>
+        <div class="floating-card people"><b>2.4k</b><small>aprendiendo ahora</small></div>
+      </div>
+    </section>
+
+    <section class="categories" id="categorias">
+      <div class="section-heading"><div><span class="kicker">ENCUENTRA TU RECURSO IDEAL</span><h2>¿Qué quieres aprender hoy?</h2></div><p>Contenido práctico y directo, pensado para ayudarte a cumplir tus objetivos.</p></div>
+      <div class="category-grid">
+        <button class="category active" data-category="Todos"><span class="cat-icon purple">▶</span><div><b>Clases en video</b><small>Aprende paso a paso</small></div><i>18</i></button>
+        <button class="category" data-category="Apuntes"><span class="cat-icon orange">▤</span><div><b>Apuntes</b><small>Lo esencial, ordenado</small></div><i>34</i></button>
+        <button class="category" data-category="Solucionarios"><span class="cat-icon green">✓</span><div><b>Solucionarios</b><small>Resuelve y comprende</small></div><i>21</i></button>
+        <button class="category" data-category="Simulaciones"><span class="cat-icon blue">⌁</span><div><b>Simulaciones</b><small>Practica sin límites</small></div><i>12</i></button>
+      </div>
+    </section>
+
+    <section class="featured" id="explorar">
+      <div class="section-heading compact"><div><span class="kicker">LOS FAVORITOS DE LA COMUNIDAD</span><h2>Recursos destacados</h2></div><a href="#explorar">Ver todos los recursos →</a></div>
+      <div class="filter-row"><button class="filter active" data-filter="Todos">Todos</button><button class="filter" data-filter="Video">Clases</button><button class="filter" data-filter="Apuntes">Apuntes</button><button class="filter" data-filter="Solucionarios">Solucionarios</button><button class="filter" data-filter="Simulaciones">Simulaciones</button></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="how" id="como-funciona">
+      <div><span class="kicker light">SIMPLE Y A TU RITMO</span><h2>Tu próximo logro<br>empieza aquí.</h2><p>Elige un recurso, aprende con contenido de calidad y aplica lo aprendido desde el primer día.</p><a class="white-btn" href="#explorar">Comenzar ahora →</a></div>
+      <div class="steps"><article><span>01</span><div><b>Explora</b><p>Encuentra el recurso perfecto para tu objetivo.</p></div></article><article><span>02</span><div><b>Aprende</b><p>Accede al instante desde cualquier dispositivo.</p></div></article><article><span>03</span><div><b>Avanza</b><p>Mide tu progreso y alcanza tus metas.</p></div></article></div>
+    </section>
+  </main>
+
+  <footer><a class="brand light-brand" href="#inicio"><span class="brand-mark">N</span><span>nexo</span></a><p>Aprende a tu manera. Crece sin límites.</p><span>© 2026 Nexo</span></footer>
+
+  <div class="search-panel" id="searchPanel"><div><input id="searchInput" type="search" placeholder="¿Qué quieres aprender?" aria-label="Buscar recursos"><button id="closeSearch">×</button></div></div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2>Tu bolsa <span id="drawerCount">(0)</span></h2><button id="closeCart">×</button></div><div class="cart-items" id="cartItems"><div class="empty"><span>◇</span><b>Tu bolsa está vacía</b><p>Explora nuestros recursos y comienza a aprender.</p></div></div><div class="cart-footer" id="cartFooter"><div><span>Total</span><b id="cartTotal">$0</b></div><button>Finalizar compra →</button></div></aside>
+  <div class="toast" id="toast">✓ Recurso añadido a tu bolsa</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
